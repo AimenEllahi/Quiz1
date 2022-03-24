@@ -413,11 +413,6 @@ html {
   .rotating-text {
     font-size: 1rem;
   }
-  .button {
-    width: 40%;
-    padding: 0.5rem 4rem;
-    margin: 3% auto;
-  }
 }
 @media (max-width: 1048px) {
   .navbar-nav1 li {
@@ -426,6 +421,9 @@ html {
   }
   .navbar-nav1 {
     margin-right: 10rem;
+  }
+  .button {
+    width: 25%;
   }
   .aboutMe-container {
     flex-direction: column;
@@ -452,6 +450,14 @@ html {
     cursor: pointer;
     display: block;
     transition: 0.7s ease-out all;
+  }
+  .Buttons {
+    align-items: center;
+    flex-direction: column;
+  }
+  .button {
+    margin-top: 0.6rem;
+    width: 50%;
   }
   .navbar-nav1 {
     display: none;
@@ -500,6 +506,14 @@ html {
   }
 }
 
+@media (max-width: 700px) {
+  .icons {
+    width: 50%;
+  }
+  .button {
+    width: 60%;
+  }
+}
 /* animated name css */
 
 .name-2 {

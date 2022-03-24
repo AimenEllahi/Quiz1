@@ -255,8 +255,12 @@ html {
   cursor: pointer;
   margin: auto;
 }
-
 .site-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+.site-link:hover {
   cursor: pointer;
   text-decoration: none;
   color: #fff;

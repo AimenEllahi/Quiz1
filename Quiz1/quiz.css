@@ -21,7 +21,7 @@ html {
   background: rgb(30, 80, 114);
   background: linear-gradient(90deg, rgb(21, 68, 100) 37%, #398ab9 72%);
 
-  height: 70vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -177,9 +177,7 @@ html {
 /* about me section */
 
 .about-me {
-  height: 45vh;
-  width: 85%;
-  margin: 6rem auto;
+  margin: 3rem auto;
   border-radius: 1rem;
   box-shadow: 1px 0px 14px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 0px 14px 0px rgba(0, 0, 0, 0.75);
@@ -188,31 +186,16 @@ html {
 }
 
 .aboutMe-container {
+  padding: 1.8rem;
   display: flex;
   flex-direction: row;
-  padding: 1.3rem;
 }
 
-.aboutMe-desc {
-  flex: 1;
-  flex-wrap: wrap;
-  margin-right: 1rem;
-}
-
-.aboutMe-info {
-  flex: 1;
-}
 .aboutInfo-row {
-  height: 25vh;
+  height: 65%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 1.5rem;
-}
-
-.aboutInfo-col1 {
-  width: 50%;
-  margin-left: 1rem;
 }
 
 /* portfolio section */
@@ -229,6 +212,7 @@ html {
 }
 
 .project-cards {
+  width: 100%;
   margin: 1rem 0;
   display: flex;
   flex-direction: row;
@@ -237,12 +221,13 @@ html {
 }
 
 .project-card {
+  width: 48%;
   position: relative;
   margin-bottom: 1rem;
 }
 
 .project-card img {
-  width: 450px;
+  width: 100%;
   border-radius: 1rem;
   object-fit: contain;
   opacity: 0.9;
@@ -341,25 +326,7 @@ html {
   font-size: 3rem;
   padding: 2%;
 }
-.progressbar {
-  position: relative;
-  max-width: 500px;
-  width: 100%;
-  margin: 30px auto 0;
-  height: 30px;
-  background: #154864;
-  overflow: hidden;
-}
 
-span.progress {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 0;
-  background: #1d648a;
-  transition: all 0.3s;
-}
 .html-1 {
   margin-right: 24%;
   color: #000;
@@ -387,12 +354,6 @@ span.progress {
   font-size: 3rem;
   padding: 2%;
   margin-top: 1rem;
-}
-
-.googleMap {
-  width: 70%;
-  margin: auto;
-  margin-top: 2%;
 }
 
 .contact-me {
@@ -438,9 +399,6 @@ span.progress {
 }
 
 @media (max-width: 1300px) {
-  .icon-container {
-    margin-top: 7.5rem;
-  }
   .profile-img {
     height: 150px;
     width: 150px;
@@ -452,17 +410,10 @@ span.progress {
   .button {
     width: 40%;
     padding: 0.5rem 4rem;
-
     margin: 3% auto;
-  }
-  .container1 {
-    height: 60vh;
   }
 }
 @media (max-width: 1048px) {
-  .icon-container {
-    margin-top: 8.5rem;
-  }
   .navbar-nav1 li {
     margin-right: 2px;
     font-weight: 400;
@@ -470,57 +421,23 @@ span.progress {
   .navbar-nav1 {
     margin-right: 10rem;
   }
-
-  /* about me section */
-
-  .about-me {
-    height: 70vh;
-    width: 85%;
-    margin: 6rem auto;
-  }
-
   .aboutMe-container {
-    display: flex;
     flex-direction: column;
-    padding: 1.3rem;
   }
-
-  .aboutMe-desc {
-    flex: 1;
-    flex-wrap: wrap;
-    margin-right: 1rem;
-  }
-
-  .aboutMe-info {
-    flex: 1;
-  }
-  .aboutInfo-row {
-    height: 25vh;
-    display: flex;
-    flex-direction: column;
+  .about-info-row {
+    width: 100%;
+    margin-top: 1.7rem !important;
     justify-content: space-between;
-    margin-left: 1.5rem;
-  }
-  .row {
     display: flex;
-    flex-direction: row;
-    width: 70%;
-    justify-content: space-between;
+    text-align: left;
   }
 
   .aboutInfo-col1 {
-    width: 50%;
+    text-align: left;
   }
 }
 
 @media (max-width: 700px) {
-  .icon-container {
-    margin-top: 3.3rem;
-  }
-  .container1 {
-    height: 50vh;
-  }
-
   .bars {
     color: #fff;
     font-size: 2rem;
@@ -568,13 +485,6 @@ span.progress {
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {
     display: block;
-  }
-  /* about me section */
-
-  .about-me {
-    height: 85vh;
-    width: 85%;
-    margin: 6rem auto;
   }
 
   /* education section */

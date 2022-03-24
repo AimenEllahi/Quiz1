@@ -199,7 +199,9 @@ html {
 }
 
 /* portfolio section */
-
+.aboutInfo-col1 {
+  margin-left: 2rem;
+}
 .portfolio {
   width: 80%;
   margin: auto;

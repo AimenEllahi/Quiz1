@@ -30,7 +30,13 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.my-navbar {
   background-color: #154864;
+}
+.my-color {
+  color: #fff !important;
 }
 
 .navbar1:hover {
@@ -507,11 +513,27 @@ html {
 }
 
 @media (max-width: 700px) {
+  .aboutMe-desc {
+    font-size: 0.9rem;
+  }
+  .info,
+  .about {
+    font-size: 2rem;
+  }
   .icons {
     width: 50%;
   }
   .button {
     width: 60%;
+  }
+  .aboutInfo-col1 {
+    font-size: 0.8rem;
+  }
+
+  .portfolio-title,
+  .education-title,
+  .contact-title {
+    font-size: 2.5rem;
   }
 }
 /* animated name css */

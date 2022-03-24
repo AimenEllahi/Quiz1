@@ -255,7 +255,7 @@ html {
   cursor: pointer;
   margin: auto;
 }
-.site-link   {
+.site-link {
   cursor: pointer;
   text-decoration: none;
   color: #fff;
@@ -273,7 +273,7 @@ html {
 /* education section */
 
 .Education {
-  height: 80vh;
+  height: 100%;
   width: 70%;
   margin: 1rem auto;
   border-radius: 0.5rem;
@@ -456,6 +456,12 @@ html {
   .navbar-nav1 {
     display: none;
   }
+  .degree {
+    flex-direction: column;
+  }
+  .degree-title {
+    width: 100%;
+  }
   /* .dropdown-content{
       display: none;
       transition: .7s ease-out all ;
@@ -491,30 +497,6 @@ html {
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {
     display: block;
-  }
-
-  /* education section */
-
-  .Education {
-    height: 100vh;
-  }
-
-  .degree {
-    margin: 1rem auto;
-
-    width: 80%;
-    border-radius: 0.2rem;
-    box-shadow: 1px 0px 14px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 1px 0px 14px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px 0px 14px 0px rgba(0, 0, 0, 0.75);
-    display: flex;
-    flex-direction: column;
-  }
-
-  .degree-title {
-    width: 100%;
-    color: #000;
-    background-color: #154864;
   }
 }
 
